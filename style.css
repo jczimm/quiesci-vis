@@ -1,0 +1,6 @@
+@import './lib/normalize.css';
+
+body {
+	overflow-y: hidden;
+	background-color: #333;
+}
