@@ -5,8 +5,8 @@ util.addEvent = function addEvent(object, type, callback) {
     if (object.addEventListener) {
         object.addEventListener(type, callback, false);
     } else if (object.attachEvent) {
-        object.attachEvent("on" + type, callback);
+        object.attachEvent('on' + type, callback);
     } else {
-        object["on" + type] = callback;
+        object['on' + type] = callback;
     }
 };

@@ -2,8 +2,8 @@ const canvasEl = document.getElementsByTagName('canvas')[0];
 const ctx = canvasEl.getContext('2d');
 
 const audio = new Audio();
-audio.src = "https://crossorigin.me/http://142.4.217.133:8222/stream";
-audio.crossOrigin = "anonymous";
+audio.src = 'https://crossorigin.me/http://192.99.8.170:7386/stream';
+audio.crossOrigin = 'anonymous';
 
 //
 
@@ -47,7 +47,7 @@ function onWindowResize(event) {
 
     analyser.fftSize = 128;
     lineWidth = canvasEl.width / analyser.frequencyBinCount * 1.2;
-    ctx.fillStyle = "#eee";
+    ctx.fillStyle = '#eee';
 }
 util.addEvent(window, 'resize', onWindowResize);
 onWindowResize();
